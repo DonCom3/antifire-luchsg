@@ -1,0 +1,21 @@
+export default function Document({
+    color = 'currentColor',
+    width = 55,
+    height = 55,
+}) {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+            id="icon"
+            fill={color}
+            width={width}
+            height={height}
+            preserveAspectRatio="xMidYMid meet"
+        >
+            <g transform="scale(6.3)">
+                <path d="M11 11H5a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zM4.5 8.5A.5.5 0 0 0 5 9h6a.5.5 0 0 0 0-1H5a.5.5 0 0 0-.5.5zM14.496 4L10.5 0H2a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5V4h-.003zM10.5 1.23L13.266 4H10.5V1.23zm3 13.27a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5v-13A.5.5 0 0 1 3 1h6.5v4h4v9.5z" />
+            </g>
+        </svg>
+    );
+}

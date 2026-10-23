@@ -1,0 +1,137 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section {
+    display: flex;
+    background: var(--background-tertiary);
+    min-height: 100vh;
+    padding: 20px 15px;
+    color: var(--text-primary);
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.5s ease-out forwards;
+    max-width: 90%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-top: 80px;
+        max-width: 1140px;
+    }
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.nomenclature-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .nomenclature-list-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+        column-gap: 70px;
+    }
+}
+
+.nomenclature-item {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 30px;
+    /* margin: 10px; */
+}
+
+.nomenclature-item-image-wrapper {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+    .nomenclature-item-image-wrapper {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+.nomenclature-item-image {
+    object-fit: cover;
+}
+
+.nomenclature-item-text-wrapper {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    flex: 1;
+}
+
+.nomenclature-item-title-price-wrapper {
+    display: flex;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+    /* justify-content: space-between; */
+}
+
+.nomenclature-item-title {
+    font-size: 14px;
+}
+
+.nomenclature-item-price {
+    font-size: 14px;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.connector {
+    flex-grow: 1;
+    height: 14px;
+    border-bottom: 1px dotted var(--text-primary);
+}
+
+.nomenclature-item-description {
+    width: 100%;
+    font-size: 14px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}

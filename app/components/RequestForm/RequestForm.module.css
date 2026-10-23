@@ -1,0 +1,28 @@
+.form-wrapper {
+    background-color: var(--background-primary);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.form-title {
+    font-size: 16px;
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.btn-submit {
+    background-color: var(--black);
+    color: var(--text-light);
+    height: 42px;
+}
+
+.label {
+    color: var(--text-primary) !important;
+}
+
+.notification {
+    font-size: 16px;
+    padding: 12px;
+}

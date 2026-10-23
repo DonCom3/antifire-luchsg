@@ -1,0 +1,55 @@
+.carousel {
+    position: relative;
+}
+
+/* Container for the carousel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for the Swiper component */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for arrow buttons */
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    outline: none; /* Remove focus outline */
+}
+
+/* Positioning for previous button */
+.arrow-button:first-of-type {
+    left: 10px;
+}
+
+/* Positioning for next button */
+.arrow-button:last-of-type {
+    right: 10px;
+}
+
+.arrow-button:focus {
+    outline: none;
+}
+
+/* Styling for arrow icons */
+.arrow-icon {
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.5; /* Default opacity */
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for arrow icons */
+.arrow-button:hover .arrow-icon {
+    opacity: 1; /* Full opacity on hover */
+}
